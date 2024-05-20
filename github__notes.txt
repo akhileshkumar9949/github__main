@@ -1,0 +1,425 @@
+08-05-2024				GITHUB COURSE
+
+
+GIT and GITHUB both are separate to discuss  this complete course we have maily 4 topic .there are
+
+1.vcs & git repos
+2.staging area & commit
+3.branches
+4.issues & pull request (prs)
+
+1.Define git
+
+Git means version control system 
+
+version control system used for version changes and product save
+
+There are alot version control systems are there in that mostly important thing git  
+
+Git - Installing Git (git-scm.com) use this link for git tutorials
+
+To learn git we should know git concept 
+
+1.remote repository 
+2.local repository 
+3. Staging area
+4.working directory
+
+2.what is a repository?
+
+Repository simply called a repo 
+
+Here repo simply means a  folder or package for a project.
+
+Or 
+
+Project folder
+
+3.what is a remote repository ?
+
+Remote repository means anywhere remote internet it can be any server github git server etc we will store our repository  
+				Or
+We can store our repository in any internet server then it is called a remote repository.
+		
+4 What is a local repository?
+
+Local means in our system or computer 
+
+Repository means project file 
+
+Local repository means : our computer project file 
+
+5 What is a Staging area?
+
+Staging area means if we want to send how many files we want to send 
+
+We can send single file also by using this staging area 
+
+This Staging area is between the working directory  and local repository this is the most important 
+
+
+
+6 working directory : we have one file and we are working on that file which stage we are working on specific that specific stage is called as a working directory
+
+The files which are created new that files comes under the untracked files this type of the files are called as a working directory.
+
+What the code we are writing in the vs code that code will be save in the working directory 
+
+
+Create a new folder in our local file 
+
+Open that created file in vs code 
+ 
+Next we have to do open new terminal in vs code
+
+Code:
+
+
+
+Output:
+
+
+Here we have two untracked files in above figure 
+
+Now we have to track that files so that untracked files are now present in work working directory  
+09-05-2024
+
+Commands 
+
+Step 1: git init
+Step-2:git status
+Step-3: working directory  to  Staging area
+
+	Here we have use command git add (file name)
+
+After using this command this will go to Staging area
+
+Step-4: Staging area to local repository
+
+To get file from Staging area to local repository
+ 
+We have one command that is git commit -m” entre a message” 
+
+here -m”” here we can write any message
+
+Step -5: local repository to remote repository
+
+To get a file from local repository to remote repository first we have to add our created new repository in git 
+After creating the new repository we will get our repository link copy the link and there will get step to follow 
+
+https://github.com/akhileshkumar9949/git-tutorials.git
+
+Now we have to add our new repository  to add new repository  link in our thermal  we have 
+
+command that git remote add origin (link)
+
+This process only ones when we create a new repository  after adding our repository  the we have to push the file into local repository  to remote repository 
+
+ command is git push -u origin master
+
+Here master is main branch in repository  
+
+To check our working on with branch we have command that is git branch 
+
+Now after this process go and check in our github app there  will be files what we have added
+
+
+OUTPUT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					Branches
+
+Branch:  Branch means  main or master 
+	       
+	      In this main or master only our code will present or there.
+
+Example : company ABC in this company there are 10 persons are working  for each person have separate branch 
+
+
+
+
+			code1(branch)—-dev1—feature1—working on it
+			
+			code1—-dev1—feature1—working on it
+			
+Master /main		code1—-dev1—feature1—working on it
+
+
+			code1—-dev1—feature1—working on it
+			
+			code1—-dev1—feature1—working on it
+
+Branch is meanly used for written code to deploy or redeploy 
+
+Here deploy means writing code 
+         Deploy means editing code
+
+
+
+
+
+Here we will create a branch and we will rewrite the code and we will send that code to our team leader .we will raise one pr (pull request ) our team leader will accept  our pr request if he like our changed code  he will merge if her dont like we will give commands and form that commands we have to change after that   our team leader will check the code and we will ok with that code he will keep our code in main/master 
+
+Step1: to create a branch we have use command that is 
+
+Git checkout -b “brance__name”
+
+Git checkout code is used to jump one branch to another branch 
+
+Here -b means branch
+
+
+
+
+After creating a new branch use command to check with branch at present 
+
+To check that we have use command git branch
+
+
+
+Now the result will come that what the branch we new created that we are working on that new created branch 
+
+Now check the status git we know already to check git status we have command that 
+
+Check status
+
+
+
+
+Its show that which working directory we are  so we are in working directory   so again we have to do same process what we have done in stage 1
+
+
+
+
+Again we have to push here if we directly use a command 
+
+Git push means its show some information to follow because we are not able to push directly 
+
+
+If we want to change one branch to another branch git checkout BRANCH NAME
+
+
+
+
+So we have follow from this code her shows that use git push –set-upstream origin copy1_branch
+
+
+
+
+Done successfully
+
+Now go to the github and see that copy1_branch created 
+
+
+
+
+
+
+
+
+So now we have to compare and pull request to our team leader
+
+
+
+Here we will create pull  request to our team leader
+
+
+After sending the pull request to our team leader he will get a request to merge like below pic
+
+
+
+If Team leader likes your code he will merge pull request then process will be given below
+
+
+
+Then the team leader will conform merge that is copy1_branch will entre into main/master
+
+
+
+
+
+Here the example1.txt came to masters/main 
+
+
+
+
+		
+		      
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					GIT CLONE
+
+Git clone is used to bring open source or any other person project into my git or my workspace
+
+
+Opensource: open source means some other project  so get other person project in our workspace means 
+
+If we don't have permission to work on other person folder or project that time have to do
+ fork option
+
+If we select option fork that time the other person project files will comes to our workspace after coming that project files in to our workspace then i want to change as i want then i can create branch and i will push to that person again he will merge and will keep our edited code in master /main
+
+
+Step 1: so i want to take this project into my local so to get that folder in my local that i type i have to go to code option in that code option i will get one http link i have to copy that link and i have paste in vs code 
+
+Step 2: we have create a new folder in our system 
+
+Step3: open this folder in cmd or vs code 
+
+Step 4: so after opening this new folder in vs code the open terminal here we should not do 
+git init …here git init means installing project 
+So here project already in remote so we have to bring that project so we have use git clone
+
+Step 5: git clone (paste copy link )
+
+Step 6: after adding link to git clone we will get all the files from other person now if we want to change any thing we can edit and we have save
+
+Step 7:after saving now check status by using command git status
+
+
+
+Output will comes like this ..so this means we are in outside  of the repository  so now we have to go inside of the repository 
+
+
+Step 8 : dir —-> here dir means directory  its show that complete details of that files and copy folder name
+
+
+
+
+Step 9: to go into that folder so we have cd command cd means change directory/foder
+
+Cd folder name
+
+Step 10: git status: output comes like below
+
+
+
+Step 10: again same process what before we done .
+ 
+Step 11: after doing before process like add ,commit and push the project will go to our github .then again we have to raise the pull request after raising pull request the other person will acpt our pr if he like our code he will change and he will update in his project .then we can see the code in that person project.
+
+
+
+					 MERGE CONFELX
+
+Main or master —---created two branches —   hi (code in master )
+
+ Copy1—-hii (1st person)
+
+						 Copy2—hi–dev (2nd person)
+
+The code in master is hi .First person changes the code and he raises the pull request to the team leader. The team leader accepts the code and he merges the code in master .
+
+So in file we have the code that hii 
+
+Here again 2nd person want to edit the code hi to hi-dev here and 2nd person pull raise request and it tell you there is a Merge complex because here hii -dev want to change in file hi there so but here in the master we have hii .so now will change and 
+
+
+Here to bring edited data so we need  bring edited data into local so we can use git pull or git fetch commands 
+
+Git pull :git pull means its bring changes and it can change 
+Git fetch:git fetch means its bring only changes can not be changed
+
+
+We created two branches and we send one pull request from first branch we merged and we changed chances 
+
+Again 2nd branch want to change again he will change the code the code he will raise the pull request that time its shows thst below 
+
+
+
+
+If we got this kind of the issue in our github we can open resolve conflicts 
+
+
+
+
+From above the photo that says in master we have edited hello akhilesh kumar iam fine but  now you want that change into hello akhilesh --dev 
+
+
+So in our vs code now we have to use one command when we got this kind of issue 
+
+Git merge origin/master
+
+
+If we use above command now output shows 
+
+
+
+
+beacuse the reason is we didn't pull 
+
+Git master command 
+
+Git pull— this git pull command bring all the changes from the master 
+
+
+
+
+Again we have to switch into branch 2 dev-2 
+
+Git checkout dev-2
+And next git merge master
+
+
+
+Its so that above 
+
+
+
+In above 3 have 3 options from that 3 options we have click on accept both changes
+
+
+
+
+Again same process then add commit push then pull request code will be in master 
